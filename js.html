@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	
+	function rev(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
+}
+console.log(rev(12345));
+
+	function prim(n)
+	{
+		if (n===1)
+  {
+    return "not prime";
+  }
+  else if(n === 2)
+  {
+    return "prime";
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return "not prime";
+      }
+    }
+    return "prime";  
+  }
+	}
+	console.log(prim(37));
+</script>
+</body>
+
+</html>
